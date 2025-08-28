@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Status - Atrian Network</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<style>
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #000;
+    color: #ccc;
+    overflow-x: hidden;
+  }
+
+  /* Animated background */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(135deg, #0f0, #000, #0f0);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+    z-index: -1;
+  }
+
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Navigation bar */
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+    background: rgba(0,0,0,0.7);
+  }
+
+  nav a {
+    color: #0f0;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+
+  nav a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #0f0;
+  }
+
+  nav a#logo {
+    margin-right: auto;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  /* Status pill */
+  .status-pill {
+    margin: 5rem auto;
+    padding: 2rem;
+    max-width: 600px;
+    text-align: center;
+    border: 2px solid #0f0;
+    border-radius: 50px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .status-pill:hover {
+    border-color: #0f0;
+    box-shadow: 0 0 20px #0f0;
+  }
+
+  .status-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #0f0;
+  }
+
+  .status-text {
+    font-size: 1.2rem;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a id="logo" href="index.html">ATRIAN NETWORK</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="features.html">Features</a>
+  <a href="status.html">Status</a>
+</nav>
+
+<div class="status-pill">
+  <div class="status-title">STATUS</div>
+  <div class="status-text">
+    Server info is currently in development.<br>
+    Please check our <a href="https://discord.gg/ycnskETVFj" style="color:#0f0;">Discord</a> for updates.
+  </div>
+</div>
+
+</body>
+</html>

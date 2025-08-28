@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Atrian Network</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(-45deg, #0a0a0a, #003300, #0a0a0a);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 5%;
+      background: rgba(0, 0, 0, 0.95);
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #e0e0e0;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .logo:hover {
+      color: #00cc66;
+      text-shadow: 0 0 5px #008844;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #ddd;
+      transition: 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: #00ff88;
+      text-shadow: 0 0 6px #00cc66;
+    }
+
+    .active {
+      color: #00cc66 !important;
+    }
+
+    /* About Section */
+    .about {
+      padding: 4rem 10%;
+      text-align: center;
+    }
+
+    .about h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      color: #00cc66;
+      text-shadow: 0 0 6px rgba(0,128,64,0.4);
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.8;
+      color: #bbb;
+      font-size: 1.1rem;
+      margin-bottom: 3rem;
+    }
+
+    /* Highlight Boxes */
+    .highlight-boxes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .box {
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.6);
+      border: 2px solid #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.3);
+      transition: all 0.3s ease;
+      color: #ddd;
+    }
+
+    .box:hover {
+      border-color: #00ff88;
+      box-shadow: 0 0 15px #00ff88, 0 0 30px #00ff88;
+      transform: translateY(-5px);
+    }
+
+    .box h2 {
+      color: #00cc66;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #000;
+      color: #00aa55;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">Atrian Network</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="status.html">Status</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+  <section class="about">
+    <h1>About Atrian Network</h1>
+    <p>
+      Atrian Network is a community-driven Minecraft server built by players, for players.  
+      Our mission is to create an immersive multiplayer experience where everyone feels welcome.  
+      With a mix of Survival, Economy, Lifesteal, Factions, and PvP modes, Atrian Network delivers  
+      endless adventures for casual and competitive players alike.  
+    </p>
+
+    <!-- Highlight Boxes -->
+    <div class="highlight-boxes">
+      <div class="box">
+        <h2>Community First</h2>
+        <p>We prioritize a welcoming and supportive community where players can connect, share, and enjoy the game together.</p>
+      </div>
+      <div class="box">
+        <h2>Unique Gameplay</h2>
+        <p>From Survival to Lifesteal and PvP, Atrian Network offers diverse game modes designed for fun and challenge.</p>
+      </div>
+      <div class="box">
+        <h2>Always Evolving</h2>
+        <p>We continuously add new features and updates, ensuring fresh experiences and exciting events for all players.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Atrian Network. Powered by our community.</p>
+  </footer>
+</body>
+</html>
